@@ -50,4 +50,29 @@ const pizzas = [
 
 // a)  Las pizzas que tengan un id impar.
 
+// for (PizzaImar of pizzas) {
+//   if (PizzaImar.id % 2 !== 0) {
+//     console.log(`Pizzas Impares ${PizzaImar.nombre}`);
+//   }
+// }
 
+// b) Responder: ¿Hay alguna pizza que valga menos de $600?
+
+// let PizzaMenorA600 = false;
+
+// for (PizzaBarata of pizzas) {
+//   if (PizzaBarata.precio < 600) {
+//     PizzaMenorA600 = true;
+//     break;
+//   }
+// }
+
+// if (PizzaMenorA600) {
+//   console.log("Si hay Pizzas menor a 600$");
+// } else {
+//   console.log("Pizza igual o mayor a 600$");
+// }
+
+for (const PreciosDePizzas of pizzas) {
+  console.log(`${PreciosDePizzas.nombre}: $${PreciosDePizzas.precio}`);
+}
